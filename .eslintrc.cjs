@@ -22,12 +22,18 @@ module.exports = {
 				sourceType: 'script',
 			},
 		},
+		{
+			files: ['src/**/*.ts'],
+			rules: {
+				'hexagonal-architecture/enforce': ['error'],
+			},
+		},
 	],
 	parserOptions: {
 		ecmaVersion: 'latest',
 		sourceType: 'module',
 	},
-	plugins: ['react', 'react-refresh'],
+	plugins: ['react', 'react-refresh', 'hexagonal-architecture'],
 	rules: {
 		'react/jsx-no-target-blank': 'off',
 		'react-refresh/only-export-components': [
