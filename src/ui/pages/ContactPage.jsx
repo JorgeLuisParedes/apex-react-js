@@ -1,3 +1,10 @@
+import { CitiesBackground } from '../components';
+
 export const ContactPage = () => {
-	return <div>ContactPage</div>;
+	return (
+		<>
+			<CitiesBackground />
+			<div>ContactPage</div>
+		</>
+	);
 };

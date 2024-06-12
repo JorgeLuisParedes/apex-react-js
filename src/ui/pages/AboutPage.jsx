@@ -1,3 +1,10 @@
+import { CitiesBackground } from '../components';
+
 export const AboutPage = () => {
-	return <div>AboutPage</div>;
+	return (
+		<>
+			<CitiesBackground />
+			<div>AboutPage</div>
+		</>
+	);
 };

@@ -1,3 +1,10 @@
+import { CitiesBackground } from '../components';
+
 export const PropertiesPage = () => {
-	return <div>PropertiesPage</div>;
+	return (
+		<>
+			<CitiesBackground />
+			<div>PropertiesPage</div>
+		</>
+	);
 };
