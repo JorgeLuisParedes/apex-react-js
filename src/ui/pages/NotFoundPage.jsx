@@ -1,10 +1,11 @@
-import { CitiesBackground } from '../components';
+import { CitiesBackground, MenuBar } from '../components';
 
 export const NotFoundPage = () => {
 	return (
 		<>
 			<CitiesBackground />
-			<div>NotFoundPage</div>
+			<MenuBar />
+			<div className='p-4 sm:ml-64'>NotFoundPage</div>
 		</>
 	);
 };

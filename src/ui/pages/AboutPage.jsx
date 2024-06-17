@@ -1,10 +1,11 @@
-import { CitiesBackground } from '../components';
+import { CitiesBackground, MenuBar } from '../components';
 
 export const AboutPage = () => {
 	return (
 		<>
 			<CitiesBackground />
-			<div>AboutPage</div>
+			<MenuBar />
+			<div className='p-4 sm:ml-64'>AboutPage</div>
 		</>
 	);
 };
