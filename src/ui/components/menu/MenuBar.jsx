@@ -1,15 +1,10 @@
 import 'flowbite';
 import '@fontsource/roboto';
-import {
-	Facebook,
-	Instagram,
-	Mail,
-	MapPin,
-	Phone,
-	Printer,
-} from 'lucide-react';
+import { Facebook, Instagram } from 'lucide-react';
 import { Logo } from './Logo';
 import { MenuSection } from './MenuSection';
+import { ContactSection } from './ContactSection';
+import { SocialMediaSection } from './SocialMediaSection';
 
 export const MenuBar = () => {
 	return (
@@ -43,42 +38,8 @@ export const MenuBar = () => {
 						<Logo />
 					</a>
 					<MenuSection />
-					<ul className='text-black absolute bottom-12 text-xs'>
-						<li className='flex gap-2 mb-4 items-center'>
-							<MapPin color='#d52c0b' />
-							<span>
-								8300 Nw 53rd ST Suite 350 Doral, FL 33166
-							</span>
-						</li>
-						<li className='flex gap-2 mb-4 items-center'>
-							<Phone color='#d52c0b' />
-							<span>305-742-2170</span>
-						</li>
-						<li className='flex gap-2 mb-4 items-center'>
-							<Printer color='#d52c0b' />
-							<span>305-742-2178</span>
-						</li>
-						<li className='flex gap-2 items-center'>
-							<Mail color='#d52c0b' />
-							<a
-								className='text-apOrange underline'
-								href='mailto:info@apexinvestmentsllc.net'>
-								info@apexinvestmentsllc.net
-							</a>
-						</li>
-					</ul>
-					<ul className='flex gap-2 text-black absolute bottom-2'>
-						<li>
-							<a href='https://www.facebook.com/apexinvestmentsllc'>
-								<Facebook color='#d52c0b' />
-							</a>
-						</li>
-						<li>
-							<a href='https://www.facebook.com/apexinvestmentsllc'>
-								<Instagram color='#d52c0b' />
-							</a>
-						</li>
-					</ul>
+					<ContactSection />
+					<SocialMediaSection />
 				</div>
 			</aside>
 		</>
