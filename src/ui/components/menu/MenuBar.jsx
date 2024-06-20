@@ -5,6 +5,7 @@ import { Logo } from './Logo';
 import { MenuSection } from './MenuSection';
 import { ContactSection } from './ContactSection';
 import { SocialMediaSection } from './SocialMediaSection';
+import { Link } from 'react-router-dom';
 
 export const MenuBar = () => {
 	return (
@@ -34,9 +35,9 @@ export const MenuBar = () => {
 				className='fixed top-0 left-0 z-40 w-64 h-screen transition-transform -translate-x-full sm:translate-x-0'
 				aria-label='Sidebar'>
 				<div className='h-full px-3 py-4 overflow-y-auto bg-gray-50 dark:bg-gray-800'>
-					<a href='/' className='flex items-center ps-2.5 mb-5'>
+					<Link to={'/'} className='flex items-center ps-2.5 mb-5'>
 						<Logo />
-					</a>
+					</Link>
 					<MenuSection />
 					<ContactSection />
 					<SocialMediaSection />

@@ -1,6 +1,8 @@
 import { CitiesBackground, MenuBar } from '../components';
+import { useDocumentTitle } from '../hooks';
 
 export const ContactPage = () => {
+	useDocumentTitle('Contacto');
 	return (
 		<>
 			<CitiesBackground />

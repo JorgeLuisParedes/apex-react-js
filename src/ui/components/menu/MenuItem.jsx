@@ -1,4 +1,4 @@
-import { useLocation } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
 
 const menuItem = [
 	{
@@ -31,9 +31,9 @@ export const MenuItem = () => {
 		<>
 			{menuItem.map(({ title, url }) => (
 				<li key={url}>
-					<a href={url} className={getMenuItemClass({ url })}>
+					<Link to={url} className={getMenuItemClass({ url })}>
 						<span className='ms-3'>{title}</span>
-					</a>
+					</Link>
 				</li>
 			))}
 		</>
