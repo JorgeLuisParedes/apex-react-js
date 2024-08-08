@@ -1,4 +1,4 @@
-import { CitiesBackground, MenuBar } from '../components';
+import { CitiesBackground, Footer, MenuBar } from '../components';
 import { useDocumentTitle } from '../hooks';
 
 export const ContactPage = () => {
@@ -7,7 +7,8 @@ export const ContactPage = () => {
 		<>
 			<CitiesBackground />
 			<MenuBar />
-			<div className='p-4 sm:ml-64'>ContactPage</div>
+			<div className='p-4 lg:ml-64'>ContactPage</div>
+			<Footer />
 		</>
 	);
 };

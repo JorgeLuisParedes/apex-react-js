@@ -1,4 +1,4 @@
-import { CitiesBackground, MenuBar } from '../components';
+import { CitiesBackground, Footer, MenuBar } from '../components';
 import { useDocumentTitle } from '../hooks';
 
 export const NotFoundPage = () => {
@@ -7,7 +7,8 @@ export const NotFoundPage = () => {
 		<>
 			<CitiesBackground />
 			<MenuBar />
-			<div className='p-4 sm:ml-64'>NotFoundPage</div>
+			<div className='p-4 lg:ml-64'>NotFoundPage</div>
+			<Footer />
 		</>
 	);
 };

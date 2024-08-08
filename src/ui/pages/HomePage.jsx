@@ -1,4 +1,4 @@
-import { CitiesBackground, MenuBar } from '../components';
+import { CitiesBackground, MenuBar, Footer } from '../components';
 import { useDocumentTitle } from '../hooks';
 
 export const HomePage = () => {
@@ -7,7 +7,8 @@ export const HomePage = () => {
 		<>
 			<CitiesBackground />
 			<MenuBar />
-			<div className='p-4 sm:ml-64'>HomePage</div>
+			<div className='p-4 lg:ml-64'>HomePage</div>
+			<Footer />
 		</>
 	);
 };
